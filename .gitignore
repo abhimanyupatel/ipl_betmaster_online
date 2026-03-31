@@ -1,0 +1,4 @@
+.env
+betmaster*.md
+node_modules/
+dist/
