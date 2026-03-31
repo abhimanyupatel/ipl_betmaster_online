@@ -186,8 +186,8 @@ export default function AuthGate({ auth, children }) {
             <input
               className="input"
               value={username}
-              onChange={(event) => setUsername(event.target.value.toLowerCase().replace(/\s+/g, "-"))}
-              placeholder={emailPrefix || "vivek"}
+              onChange={(event) => setUsername(event.target.value.replace(/\s+/g, "-"))}
+              placeholder={emailPrefix || "abhi"}
               required
             />
             <label className="label">Display name</label>
@@ -195,7 +195,7 @@ export default function AuthGate({ auth, children }) {
               className="input"
               value={displayName}
               onChange={(event) => setDisplayName(event.target.value)}
-              placeholder="Vivek"
+              placeholder="Abe"
               required
             />
             <button className="primary-btn" type="submit" disabled={submitting || auth.profileLoading}>
